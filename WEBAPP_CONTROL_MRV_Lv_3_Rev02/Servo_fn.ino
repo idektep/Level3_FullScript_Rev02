@@ -8,7 +8,7 @@ void M1_1() {
   if (pos1 >= 180) {
     pos1 = 180;
     idektep.setPWM(servo1, 0, angleToPulse(pos1));
-  }
+  } 
 }
 void M1_2() {
   pos1--;
@@ -32,10 +32,10 @@ void M2_1() {
   Serial.println("servo3 ");
   Serial.println(pos3);
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
-  idektep.setPWM(servo3, 0, angleToPulse(pos3));
-  if (pos2 <= 0 && pos3 <= 0) {
-    pos2 = 0;
-    pos3 = 0;
+  idektep.setPWM(servo3, 0, angleToPulse(pos3));  
+  if (pos2 <= 10 && pos3 <= 10) {
+    pos2 = 10; 
+    pos3 = 10;
     idektep.setPWM(servo2, 0, angleToPulse(pos2));
     idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
@@ -50,9 +50,9 @@ void M2_2() {
   Serial.println(pos3);
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
   idektep.setPWM(servo3, 0, angleToPulse(pos3));
-  if (pos2 >= 145 && pos3 >= 145) {
-    pos2 = 145;
-    pos3 = 145;
+  if (pos2 >= 75 && pos3 >= 120) {
+    pos2 = 75;
+    pos3 = 120;
     idektep.setPWM(servo2, 0, angleToPulse(pos2));
     idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
@@ -65,8 +65,8 @@ void M3_1() {
   Serial.println("servo3 ");
   Serial.println(pos3);
   idektep.setPWM(servo3, 0, angleToPulse(pos3));
-  if (pos3 <= 0) {
-    pos3 = 0;
+  if (pos3 <= 10) {
+    pos3 = 10;
     idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
 }
@@ -76,8 +76,8 @@ void M3_2() {
   Serial.println("servo3 ");
   Serial.println(pos3);
   idektep.setPWM(servo3, 0, angleToPulse(pos3));
-  if (pos3 >= 150) {
-    pos3 = 150;
+  if (pos3 >= 75) {
+    pos3 = 75;
     idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
 }
@@ -89,8 +89,8 @@ void M4_1() {
   Serial.println("servo4 ");
   Serial.println(pos4);
   idektep.setPWM(servo4, 0, angleToPulse(pos4));
-  if (pos4 <= 0) {
-    pos4 = 0;
+  if (pos4 <= 30) {
+    pos4 = 90;
     idektep.setPWM(servo4, 0, angleToPulse(pos4));
   }
 }
