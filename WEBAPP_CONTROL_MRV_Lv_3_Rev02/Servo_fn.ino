@@ -50,7 +50,7 @@ void M2_2() {
   Serial.println(pos3);
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
   idektep.setPWM(servo3, 0, angleToPulse(pos3));
-  if (pos2 >= 110 && pos3 >= 100) {
+  if (pos2 >= 110 && pos3 >= 110) {
     pos2 = 110;
     pos3 = 110;
     idektep.setPWM(servo2, 0, angleToPulse(pos2));
@@ -129,3 +129,4 @@ void M5_2() {
     idektep.setPWM(servo5, 0, angleToPulse(pos5));
   }
 }
+
