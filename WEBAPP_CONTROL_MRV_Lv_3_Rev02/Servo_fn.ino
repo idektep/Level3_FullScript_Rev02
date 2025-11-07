@@ -25,36 +25,24 @@ void M1_2() {
 //-----------------------------------------------Servo2 Function--------------------------------------------------//
 void M2_1() {
   pos2--;
-  // pos3--;
   delay(delay_value);
   Serial.println("servo2 ");
   Serial.println(pos2);
-  // Serial.println("servo3 ");
-  // Serial.println(pos3);
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
-  // idektep.setPWM(servo3, 0, angleToPulse(pos3));  
   if (pos2 <= 35 ) {
     pos2 = 35; 
-    // pos3 = 35;
     idektep.setPWM(servo2, 0, angleToPulse(pos2));
-    // idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
 }
 void M2_2() {
   pos2++;
-  // pos3++;
   delay(delay_value);
   Serial.println("servo2 ");
   Serial.println(pos2);
-  // Serial.println("servo3 ");
-  // Serial.println(pos3);
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
-  // idektep.setPWM(servo3, 0, angleToPulse(pos3));
   if (pos2 >= 100 ) {
     pos2 = 100;
-    // pos3 = 110;
     idektep.setPWM(servo2, 0, angleToPulse(pos2));
-    // idektep.setPWM(servo3, 0, angleToPulse(pos3));
   }
 }
 
