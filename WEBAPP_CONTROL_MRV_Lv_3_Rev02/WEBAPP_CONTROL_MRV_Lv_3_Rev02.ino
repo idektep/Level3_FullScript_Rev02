@@ -165,7 +165,7 @@ void setup(void) {
   pos2 = 90;
   pos3 = 90;
   pos4 = 30;
-  pos5 = 90;
+  pos5 = 10;
 
   idektep.setPWM(servo1, 0, angleToPulse(pos1));
   idektep.setPWM(servo2, 0, angleToPulse(pos2));
