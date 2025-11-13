@@ -23,8 +23,8 @@ int LDR_input = 0, lcd_mode = 0;
 float temp, humi, ldr;
 bool alarm_state = 0;
 Adafruit_PWMServoDriver idektep = Adafruit_PWMServoDriver(0x40); 
-#define SERVOMIN 100
-#define SERVOMAX 600
+#define SERVOMIN 155
+#define SERVOMAX 650
 
 //-----------------------------------------------Set your device name and password.--------------------------------------//
 const char *ssid = "Master";
