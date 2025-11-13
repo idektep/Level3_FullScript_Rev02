@@ -78,23 +78,24 @@ void HomePos() {
       }
     }
     //set home position servo5
-    if (Home == 1 && pos5 <= 90) {
+    if (Home == 1 && pos5 <= 10) {
       pos5++;
       delay(1);
       idektep.setPWM(servo5, 0, angleToPulse(pos5));
-      if (pos5 == 90) {
-        pos5 = 90;
+      if (pos5 == 10) {
+        pos5 = 10;
         idektep.setPWM(servo5, 0, angleToPulse(pos5));
       }
     }
-    if (Home == 1 && pos5 >= 90) {
+    if (Home == 1 && pos5 >= 10) {
       pos5--;
       delay(1);
       idektep.setPWM(servo5, 0, angleToPulse(pos5));
-      if (pos5 == 90) {
-        pos5 = 90;
+      if (pos5 == 10) {
+        pos5 = 10;
         idektep.setPWM(servo5, 0, angleToPulse(pos5));
       }
     }
   }
 }
+
