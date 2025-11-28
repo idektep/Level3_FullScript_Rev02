@@ -9,4 +9,6 @@
 	- Change SERVOMIN from 100 to 155 and SERVOMAX from 600 to 650.
     - Change the Home position from pos4 = 90 to pos4 = 30, and from pos5 = 90 to pos5 = 10.
 
-                         
+------------------ Version 0.3 (Tareerat.) ------------------                         
+	- Update Home Function
+	- Move sensor_fn(); from sv.ino to Function.ino
